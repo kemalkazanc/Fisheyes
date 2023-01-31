@@ -1,0 +1,79 @@
+.contact{
+    &__section{
+        display: none;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        top: 50px;
+    }
+    &__modal{
+        border-radius: 5px;
+        background-color: $colorForm;
+        width: 420px;
+        padding: 1em 1.5em;
+        margin: auto;
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__headerTitle{
+        width: 90%;
+    }
+    &__btnClose{
+        background: none;
+        border: none;
+    }
+    &__img{
+        cursor: pointer;
+        width: 20px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__label{
+        color: #312E2E;
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem
+    }
+    &__formInput{
+        border-radius: 5px;
+        border: none;
+        //padding: 0.5em;
+        height: 40px;
+        margin-bottom: 1rem;
+    }
+    &__textarea{
+        border-radius: 5px;
+        resize: none;
+        //padding: 0.5em;
+        height: 100px;
+        margin-bottom: 1em;
+        border: none;
+        font-family: inherit;
+        width: 100%;
+    }
+    &__button{
+        font-size: 1rem;
+        color: white;
+        width: 170px;
+        height: 70px;
+        border: none;
+        background-color: $btnColor;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+#contact_modal {
+    display: none;
+}
+
+.flexCentre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

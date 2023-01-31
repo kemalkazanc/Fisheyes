@@ -1,0 +1,115 @@
+
+.px-app,
+.px-app *,
+.px-app *::before,
+.px-app *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.px-dropdown {
+  position: relative;
+  display: flex;
+  width: 290px;
+  height: 55px;
+  z-index: 10;
+  margin-left: 1rem;
+}
+.dropdown__title{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.px-dropdown-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-color: $btnColor;
+  border-radius: 5px;
+  background-color: $btnColor;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: 300ms ease;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -ms-transition: 300ms ease;
+  -o-transition: 300ms ease;
+}
+.px-dropdown.active .px-dropdown-input {
+  border-color: $colorWhite;
+}
+
+.px-dropdown-input input {
+  color: $colorWhite;
+  font-size: 1.3rem;
+  flex: 0 0 auto;
+  width: 80%;
+  height: 100%;
+  padding: 0 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.dropdown__chevron{
+    font-size: 1.4rem;
+    color: $colorWhite;
+    z-index: 10;
+    &:active{
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+}
+
+.px-dropdown-panel {
+  position: absolute;
+  width: 173px;
+  left: 117px;
+  font-size: 1.3rem;
+  top: calc(100% + 50px);
+  border-top: 1px solid $colorWhite;
+  border-radius: 5px;
+  background-color: $btnColor;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: top 300ms ease,    opacity 300ms ease;
+  -webkit-transition: top 300ms ease,    opacity 300ms ease;
+  -moz-transition: top 300ms ease,    opacity 300ms ease;
+  -ms-transition: top 300ms ease,    opacity 300ms ease;
+  -o-transition: top 300ms ease,    opacity 300ms ease;
+}
+.px-dropdown.active .px-dropdown-panel {
+  top: 0px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.px-dropdown-panel ul {
+  list-style: none;
+}
+.px-dropdown-panel ul li {
+  color: $colorWhite;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  border-top: 1px solid $colorWhite;
+  transition: background-color 300ms ease;
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  -ms-transition: background-color 300ms ease;
+  -o-transition: background-color 300ms ease;
+}
+
+.px-dropdown-panel ul li:hover {
+  background-color: $btnColorHover;
+}
+
+

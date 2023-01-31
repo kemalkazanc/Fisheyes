@@ -1,0 +1,64 @@
+.cardMedia{
+    &__mediaGalerie{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: -5rem;
+        margin-bottom: 10rem;
+        position: relative;
+        margin-top: 2rem;
+        @media screen and (max-width: 700px) {
+            background-color: red;
+      }
+    }
+    &__filter{
+        width: 25vw;
+        height: 15rem;
+        margin-top: 5rem;
+    }
+    &__img{
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.6rem;
+        margin-bottom: -1rem;
+    }
+    &__mediaFooter{
+        margin-top: 0.5rem;
+        padding: 0% 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__titleContenu{
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.3rem;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-right: 1rem;
+        text-overflow: ellipsis;
+        color: $btnColor;
+    }
+    &__footerLike{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__compteurLike{
+        margin: 0.5rem;
+        color: $btnColor;
+    }
+    &__like{
+        border: none;
+        background: none;
+        text-align: center;
+        color: $btnColor;
+        font-size: 1rem;
+        cursor: pointer;
+        &.active{
+            i{color: $btnColor;}
+        }
+    }
+}

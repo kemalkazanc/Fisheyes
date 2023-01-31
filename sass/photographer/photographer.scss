@@ -1,0 +1,147 @@
+.photographer{
+    &__header{
+        padding: 1rem 0;
+    }
+    &__nav{
+        border-color: initial;
+    }
+    &__items{
+        padding-top: 1em;
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__logo{
+        width: 160px;
+        margin-right: 1em;
+    }
+
+    &__container{
+        width: 100%;
+    }
+    &__cube{
+        background-color: $backgroundProfilGrey;
+        border-radius: 5px;
+        display: flex;
+        padding: 1.5em;
+        justify-content: space-between;
+        margin: 1rem;
+        margin-top: 0;
+    }
+    &__info{
+        display: flex;
+    }
+    &__imgPortrait{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
+    &__infoPerso{
+        margin-right: 2em;
+    }
+    &__infoName{
+        font-size: 2.2em;
+        font-weight: 500;
+        margin-bottom: 0.1em;
+        margin-top: -10px;
+        color: $colorCountry;
+    }
+    &__infoCountry{
+        color: $colorCountry;
+        font-weight: 400;
+        font-size: 1rem;
+        margin: 0px;
+    }
+    &__infoTag{
+        color: $colorTextGrey;
+        margin-top: 0px;
+        line-height: 1.2em;
+    }
+    &__button{
+        background-color: $btnColor;
+        color: $colorWhite;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        height: 3.01rem;
+        color: $colorWhite;
+        margin-left: 90px;
+        cursor: pointer;
+    }
+    &__likePriceContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: red;
+        border-radius:0.6rem 0.6rem 0 0;
+        position: fixed;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        right: 5%;
+        margin-left: 5px;
+    }
+    &__totalLikePriceContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: large;
+        text-align: center;
+    }
+    &__heartOfLike{
+        font-weight: bold;
+        font-size: large;
+        text-align: center;
+        //padding: 0.5rem;
+    }
+    &__price{
+        margin-left: 5px;
+    }
+    &__numberOfLikeAndPrice{
+        font-weight: 500;
+        font-size: large;
+        text-align: center;
+        padding: 0.5rem
+    }
+    &__numberPrice{
+        font-weight: 500;
+        font-size: large;
+        text-align: center;
+        padding: 0.5rem
+    }
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0.15rem;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.arrow::before {
+  left: -0.5rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: white;
+}
+
+.arrow::after {
+  left: 0.5rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: white;
+}
+
+
+
+

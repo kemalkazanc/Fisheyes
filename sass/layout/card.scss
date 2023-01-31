@@ -1,0 +1,69 @@
+.card{
+    &__section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 70px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+
+        @media (max-width: 700px) {
+            font-size: 2rem;
+      }
+    }
+    &__card{
+        justify-self: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    &__link{
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    &__image{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__name{
+        font-weight: 36px;
+        font-size: 26px;
+        color: $colorCountry ;
+        text-align: center;
+        margin: 4px;
+    }
+
+    &__cityAndCountry{
+        color: $colorCountry ;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    &__info{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    &__price{
+        margin: 4px;
+    }
+}
+
+@media screen and (max-width: 390px){
+     .card__section{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 70px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
