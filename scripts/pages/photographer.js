@@ -79,6 +79,9 @@ function displayMedia(media, index) {
     //console.log("media", media)
     const galerieSection = document.getElementsByClassName("cardMedia__mediaGalerie")[0];
     const filter = document.createElement("div");
+    filter.setAttribute("aria-label" , "" + media.title);
+    filter.tabIndex = 0;
+
     // <video width="320" height="240" controls>
     //     <source src="movie.mp4" type="video/mp4">
     // </video>
@@ -91,7 +94,7 @@ function displayMedia(media, index) {
         imgMedia = document.createElement("img");
         imgMedia.classList = "cardMedia__img";
         imgMedia.setAttribute("src", "../../assets/picture/"+ media.image);
-        imgMedia.setAttribute("alt" , "" + media.title);
+        //imgMedia.setAttribute("aria-label" , "" + media.title);
     } else {
         imgMedia = document.createElement("video");
         imgMedia.setAttribute("src", "../../assets/picture/"+ media.image);
@@ -106,12 +109,14 @@ function displayMedia(media, index) {
     const titleContenu = document.createElement("p");
         titleContenu.classList = "cardMedia__titleContenu";
         titleContenu.textContent = media.title;
+        titleContenu.tabIndex = 0;
     const footerLike = document.createElement("div");
         footerLike.classList = "cardMedia__footerLike";
     const compteurLike = document.createElement("p");
         compteurLike.classList = "cardMedia__compteurLike";
         compteurLike.textContent = media.likes;
-        compteurLike.setAttribute("aria-label", "nombre de likes " + media.likes)
+        compteurLike.setAttribute("aria-label", "nombre de likes " + media.likes);
+        compteurLike.tabIndex = 0;
     const btnLike = document.createElement("button");
         btnLike.classList = "cardMedia__like";
         btnLike.textContent = media.like;

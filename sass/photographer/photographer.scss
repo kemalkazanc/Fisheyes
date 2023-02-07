@@ -72,6 +72,19 @@
         color: $colorWhite;
         margin-left: 90px;
         cursor: pointer;
+        @media screen and (max-width: 390px) {
+            width: 60%;
+            left: 30%;
+            max-width: 300px;
+            margin: 3rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 0rem;
+            position: fixed;
+            z-index: 2;
+      }
     }
     &__likePriceContainer{
         display: flex;

@@ -7,14 +7,25 @@
         margin-bottom: 10rem;
         position: relative;
         margin-top: 2rem;
-        @media screen and (max-width: 700px) {
-            background-color: red;
-      }
+        @media screen and (max-width: 1000px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+        @media screen and (max-width: 390px) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
     &__filter{
-        width: 25vw;
+        width: 30vw;
         height: 15rem;
         margin-top: 5rem;
+        @media screen and (max-width: 1000px) {
+            width: 40vw;
+        }
+
     }
     &__img{
         position: relative;
