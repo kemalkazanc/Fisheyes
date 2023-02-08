@@ -16,6 +16,10 @@
   height: 55px;
   z-index: 5;
   margin-left: 1rem;
+  margin-top: 20px;
+  @media screen and (max-width: 390px) {
+    display: none;
+  }
 }
 .dropdown__title{
     width: 200px;
