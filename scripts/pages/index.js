@@ -12,7 +12,7 @@
                 console.log(data)
                 // Ici on stock toute les données des photographes
                 photographers = data.photographers;
-                console.log("Yousri", photographers)
+                console.log("photographer", photographers)
                 //Ici on lance la fonction displayData avec le paramètre photographers
                 displayData(photographers);
             })

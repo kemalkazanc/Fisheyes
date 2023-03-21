@@ -1,10 +1,24 @@
 * body {
   font-family: "DM Sans", sans-serif;
-  margin: 20px;
+  margin: 0 0 0 60px;
+  width: 100%;
+}
+@media screen and (max-width: 490px) {
+  * body {
+    margin: 0;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  * body {
+    margin: 0;
+    padding: 5px;
+  }
 }
 
 .main {
   z-index: -1;
+  margin-bottom: 8rem;
 }
 
 .header__link {
@@ -126,7 +140,7 @@
 .photographer__items {
   padding-top: 1em;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -142,13 +156,11 @@
   }
 }
 .photographer__container {
-  width: 100%;
-  display: flex;
-  border: 2px solid red;
+  width: 95%;
 }
 @media screen and (max-width: 490px) {
   .photographer__container {
-    display: flex;
+    display: block;
     align-items: center;
     flex-direction: column;
   }
@@ -204,13 +216,16 @@
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 600px) {
   .photographer__imgPortrait {
     height: 140px;
     width: 140px;
   }
 }
 .photographer__infoPerso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-right: 2em;
 }
 @media screen and (max-width: 490px) {
@@ -256,41 +271,62 @@
 .photographer__divButton {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 600px) {
   .photographer__divButton {
-    display: flex;
-    justify-content: flex-start;
+    display: none;
+    justify-content: center;
     align-items: center;
   }
 }
 .photographer__button {
   background-color: #901C1C;
   color: white;
+  display: flex;
+  align-items: center;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
-  height: 3.1rem;
+  height: 3rem;
   color: white;
-  margin-left: 90px;
   cursor: pointer;
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 620px) {
   .photographer__button {
-    margin-top: 20px;
-    width: 150px;
-    height: 30px;
-    margin-bottom: 20px;
-    margin-left: 0;
-    position: fixed;
-    top: 30rem;
-    z-index: 10;
+    display: none;
   }
 }
-@media screen and (max-width: 860px) {
-  .photographer__button {
-    width: 150px;
-    height: 30px;
+.photographer__divButton2 {
+  display: flex;
+  justify-content: center;
+}
+.photographer__button2 {
+  background-color: #901C1C;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 3rem;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 620px) {
+  .photographer__button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+    padding: 0.4rem;
+    max-width: 300px;
+    font-size: 1.1rem;
+    position: fixed;
+    bottom: 3rem;
   }
 }
 .photographer__likePriceContainer {
@@ -306,9 +342,10 @@
   right: 5%;
   margin-left: 5px;
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 800px) {
   .photographer__likePriceContainer {
     z-index: 10;
+    visibility: hidden;
   }
 }
 .photographer__totalLikePriceContainer {
@@ -381,42 +418,68 @@
 }
 
 .contact__section {
-  display: none;
-  position: fixed;
-  z-index: 11;
+  position: relative;
+  top: 250px;
+  display: flex;
+  align-self: center;
+  z-index: 10;
   width: 100%;
-  height: 100%;
-  top: 50px;
+  visibility: hidden;
 }
 @media screen and (max-width: 490px) {
   .contact__section {
+    position: fixed;
     top: 0;
-    display: flex;
-    left: 0;
+    z-index: 1000;
   }
 }
-@media screen and (max-width: 590px) {
-  .contact__section {
-    top: 0;
-    display: flex;
-    left: 0;
-  }
-}
-.contact__modal {
-  position: relative;
+.contact__confirmation {
+  visibility: hidden;
+  position: absolute;
   border-radius: 5px;
   background-color: #DB8876;
   width: 420px;
   padding: 1em 1.5em;
   margin: auto;
+  top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  left: 35%;
+}
+@media screen and (max-width: 490px) {
+  .contact__confirmation {
+    width: 350px;
+    top: 0px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact__confirmation {
+    left: 50px;
+  }
+}
+.contact__confirmationMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  font-size: 1.5rem;
+}
+.contact__modal {
+  position: absolute;
+  border-radius: 5px;
+  background-color: #DB8876;
+  width: 420px;
+  padding: 1em 1.5em;
+  margin: auto;
+  top: 0;
 }
 @media screen and (max-width: 490px) {
   .contact__modal {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 100%;
+    width: 350px;
+    top: 0px;
   }
 }
 .contact__header {
@@ -425,6 +488,12 @@
 }
 .contact__headerTitle {
   width: 90%;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.contact__headerName {
+  font-size: 1.5rem;
+  margin-top: 0px;
 }
 .contact__btnClose {
   background: none;
@@ -461,7 +530,6 @@
   margin-bottom: 1em;
   border: none;
   font-family: inherit;
-  width: 100%;
 }
 .contact__button {
   font-size: 1rem;
@@ -471,6 +539,7 @@
   border: none;
   background-color: #901C1C;
   border-radius: 5px;
+  margin-top: 2rem;
   cursor: pointer;
 }
 @media screen and (max-width: 490px) {
@@ -479,10 +548,15 @@
   }
 }
 .contact__alert {
+  display: block;
   color: #901C1C;
   font-size: 0.8rem;
   margin-top: -0.9rem;
   margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none !important;
 }
 
 #contact_modal {
@@ -496,12 +570,11 @@
 }
 
 .cardMedia__mediaGalerie {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 10rem;
+  justify-items: center;
   position: relative;
-  margin-top: 2rem;
 }
 @media screen and (max-width: 1000px) {
   .cardMedia__mediaGalerie {
@@ -515,11 +588,16 @@
   .cardMedia__mediaGalerie {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: -50px;
+    margin-top: -60px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .cardMedia__mediaGalerie {
+    width: 90%;
   }
 }
 .cardMedia__filter {
-  width: 30vw;
+  width: 20vw;
   height: 15rem;
   margin-top: 5rem;
 }

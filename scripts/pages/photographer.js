@@ -63,14 +63,22 @@ function displayData(photographer) {
     const pricePhotographer = document.getElementsByClassName("photographer__numberPrice")[0];
     //console.log("essaie", priceDay);
 
-
     namePhotographer.textContent = photographer['name'];
     countryPhotographer.textContent = photographer ['city'] + ' , ' + [photographer.country];
     tagPhotographer.textContent = photographer['tagline'];
     imgPhotographer.setAttribute("src", picture);
     pricePhotographer.textContent = photographer['price'] + " € /Jour ";
     //console.log("essaie", pricePhotographer);
+    const formName = document.querySelector(".contact__headerName");
+            formName.textContent = photographer['name'];
+            //console.log("qu'estceque", photographer.name);
 }
+
+//----------------------------------------------------------------------
+// AFFICHER LE NOM DU PHOTOGRAPHE SUR LE FORMULAIRE
+//----------------------------------------------------------------------
+
+
 
 //----------------------------------------------------------------------
 // RECUPERATION DES MEDIAS
@@ -277,7 +285,7 @@ function slideImage(direction){
 // Button de navigation
 //----------------------------------------------------------------------
 document.addEventListener("keypress", (e) => {
-    console.log(e);
+    //console.log(e);
 })
 
 const lightboxCommande = document.getElementsByClassName("lightbox__section")[0];
@@ -344,7 +352,6 @@ function filterMedia (data){
     }
 
 }
-
 
 async function init() {
     // Récupère les datas des photographes

@@ -8,7 +8,7 @@
     &__items{
         padding-top: 1em;
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
@@ -23,11 +23,11 @@
     }
 
     &__container{
-        width: 100%;
-        display: flex;
-        border: 2px solid red;
+        width: 95%;
+
+        //border: 2px solid red;
         @media screen and (max-width: 490px) {
-            display: flex;
+            display: block;
             align-items: center;
             flex-direction: column;
         }
@@ -78,12 +78,15 @@
             width: 120px;
             margin-top: 10px;
         }
-        @media screen and (max-width: 860px){
+        @media screen and (max-width: 600px){
             height: 140px;
             width: 140px;
         }
     }
     &__infoPerso{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-right: 2em;
         @media screen and (max-width: 490px) {
             display: flex;
@@ -123,35 +126,56 @@
     &__divButton{
         display: flex;
         justify-content: center;
-        @media screen and (max-width: 860px){
-            display: flex;
-            justify-content: flex-start;
+        align-items: center;
+        @media screen and (max-width: 600px){
+            display: none;
+            justify-content: center;
             align-items: center;
         }
     }
     &__button{
         background-color: $btnColor;
         color: $colorWhite;
+        display: flex;
+        align-items: center;
         border: none;
         border-radius: 5px;
         font-size: 1rem;
-        height: 3.1rem;
+        height: 3rem;
         color: $colorWhite;
-        margin-left: 90px;
         cursor: pointer;
-        @media screen and (max-width: 490px) {
-            margin-top: 20px;
-            width: 150px;
-            height: 30px;
-            margin-bottom: 20px;
-            margin-left: 0;
-            position: fixed;
-            top: 30rem;
-            z-index: 10;
+        @media screen and (max-width: 620px) {
+            display: none;
         }
-        @media screen and (max-width: 860px){
-            width: 150px;
-            height: 30px;
+    }
+    &__divButton2{
+        display: flex;
+        justify-content: center;
+    }
+    &__button2{
+        background-color: $btnColor;
+        color: $colorWhite;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        height: 3rem;
+        color: $colorWhite;
+        z-index: 10;
+        cursor: pointer;
+        display: none;
+        @media screen and (max-width: 620px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+            height: auto;
+            padding:0.4rem;
+            max-width: 300px;
+            font-size: 1.1rem;
+            position: fixed;
+            bottom: 3rem;
         }
     }
     &__likePriceContainer{
@@ -166,8 +190,9 @@
         height: auto;
         right: 5%;
         margin-left: 5px;
-        @media screen and (max-width: 490px) {
+        @media screen and (max-width: 800px) {
             z-index: 10;
+            visibility: hidden;
         }
     }
     &__totalLikePriceContainer{

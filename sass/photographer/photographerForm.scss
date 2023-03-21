@@ -1,35 +1,60 @@
 .contact{
     &__section{
-        display: none;
-        position: fixed;
-        z-index: 11;
+
+        position: relative;
+        top: 250px;
+        display: flex;
+        align-self: center;
+        z-index: 10;
         width: 100%;
-        height: 100%;
-        top: 50px;
+        visibility: hidden;
         @media screen and (max-width: 490px) {
+            position: fixed;
             top: 0;
-            display: flex;
-            left: 0;
-        }
-        @media screen and (max-width: 590px) {
-            top: 0;
-            display: flex;
-            left: 0;
+            z-index: 1000;
         }
     }
-    &__modal{
-        position: relative;
+    &__confirmation{
+        visibility: hidden;
+        position: absolute;
         border-radius: 5px;
         background-color: $colorForm;
         width: 420px;
         padding: 1em 1.5em;
         margin: auto;
+        top: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        left: 35%;
         @media screen and (max-width: 490px) {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: 100%;
+            width: 350px;
+            top: 0px;
+            left: 0;
+        }
+        @media screen and (max-width: 600px) {
+            left: 50px;
+        }
+    }
+    &__confirmationMessage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+        font-size: 1.5rem;
+    }
+    &__modal{
+        position: absolute;
+        border-radius: 5px;
+        background-color: $colorForm;
+        width: 420px;
+        padding: 1em 1.5em;
+        margin: auto;
+        top: 0;
+        @media screen and (max-width: 490px) {
+            width: 350px;
+            top: 0px;
         }
     }
     &__header{
@@ -38,6 +63,12 @@
     }
     &__headerTitle{
         width: 90%;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    &__headerName{
+        font-size: 1.5rem;
+        margin-top: 0px;
     }
     &__btnClose{
         background: none;
@@ -74,7 +105,6 @@
         margin-bottom: 1em;
         border: none;
         font-family: inherit;
-        width: 100%;
     }
     &__button{
         font-size: 1rem;
@@ -84,19 +114,25 @@
         border: none;
         background-color: $btnColor;
         border-radius: 5px;
+        margin-top: 2rem;
         cursor: pointer;
         @media screen and (max-width: 490px) {
             z-index: 10;
       }
     }
     &__alert{
+        display: block;
         color: $btnColor;
         font-size: 0.8rem;
         margin-top: -0.9rem;
         margin-bottom: 1rem;
-        //display: none;
     }
 }
+
+.hidden{
+    display: none !important;
+  }
+
 
 #contact_modal {
     display: none;
