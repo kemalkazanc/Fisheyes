@@ -17,8 +17,12 @@
   z-index: 5;
   margin-left: 1rem;
   margin-top: 20px;
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 490px) {
     display: none;
+  }
+  @media screen and (max-width: 860px) {
+    width: 290px;
+    height: 30px;
   }
 }
 .dropdown__title{
@@ -26,6 +30,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 860px) {
+      font-size: medium;
+    }
 }
 .px-dropdown-input {
   width: 100%;

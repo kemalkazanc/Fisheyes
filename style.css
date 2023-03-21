@@ -22,7 +22,7 @@
     font-size: 30px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 560px) {
   .header__title {
     font-size: 20px;
   }
@@ -30,12 +30,12 @@
 .header__logo {
   height: 50px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .header__logo {
     height: 40px;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 560px) {
   .header__logo {
     height: 25px;
   }
@@ -48,14 +48,14 @@
   margin-top: 90px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .card__section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .card__section {
     display: grid;
     grid-template-columns: 1fr;
@@ -85,7 +85,7 @@
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .card__image {
     margin-top: 20px;
     height: 150px;
@@ -108,7 +108,7 @@
   font-size: 13px;
   margin: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .card__info {
     text-align: center;
   }
@@ -136,7 +136,7 @@
   width: 160px;
   margin-right: 1em;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__logo {
     width: 130px;
   }
@@ -146,7 +146,7 @@
   display: flex;
   border: 2px solid red;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__container {
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@
   justify-content: space-between;
   margin-top: 0;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__cube {
     display: flex;
     flex-direction: column;
@@ -172,9 +172,15 @@
 .photographer__info {
   display: flex;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__info {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 860px) {
+  .photographer__info {
+    align-items: center;
+    justify-content: center;
   }
 }
 .photographer__portrait {
@@ -189,7 +195,7 @@
   object-fit: cover;
   display: block;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__imgPortrait {
     display: flex;
     justify-content: center;
@@ -198,10 +204,16 @@
     margin-top: 10px;
   }
 }
+@media screen and (max-width: 860px) {
+  .photographer__imgPortrait {
+    height: 140px;
+    width: 140px;
+  }
+}
 .photographer__infoPerso {
   margin-right: 2em;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__infoPerso {
     display: flex;
     flex-direction: column;
@@ -216,7 +228,7 @@
   margin-top: -10px;
   color: #D3573C;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__infoName {
     font-size: 25px;
     display: flex;
@@ -234,16 +246,23 @@
   margin-top: 0px;
   line-height: 1.2em;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__infoTag {
     font-size: 10px;
     display: flex;
     align-items: center;
   }
 }
-.photographer____divButton {
+.photographer__divButton {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 860px) {
+  .photographer__divButton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 .photographer__button {
   background-color: #901C1C;
@@ -256,7 +275,7 @@
   margin-left: 90px;
   cursor: pointer;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__button {
     margin-top: 20px;
     width: 150px;
@@ -266,6 +285,12 @@
     position: fixed;
     top: 30rem;
     z-index: 10;
+  }
+}
+@media screen and (max-width: 860px) {
+  .photographer__button {
+    width: 150px;
+    height: 30px;
   }
 }
 .photographer__likePriceContainer {
@@ -281,7 +306,7 @@
   right: 5%;
   margin-left: 5px;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__likePriceContainer {
     z-index: 10;
   }
@@ -308,12 +333,12 @@
   text-align: center;
   padding: 0.5rem;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__numberOfLikeAndPrice {
     font-size: small;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer____coeurTotal {
     height: 0px;
   }
@@ -324,7 +349,7 @@
   text-align: center;
   padding: 0.5rem;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .photographer__numberPrice {
     font-size: small;
   }
@@ -363,7 +388,14 @@
   height: 100%;
   top: 50px;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
+  .contact__section {
+    top: 0;
+    display: flex;
+    left: 0;
+  }
+}
+@media screen and (max-width: 590px) {
   .contact__section {
     top: 0;
     display: flex;
@@ -378,7 +410,7 @@
   padding: 1em 1.5em;
   margin: auto;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .contact__modal {
     position: relative;
     display: flex;
@@ -406,7 +438,7 @@
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .contact__form {
     height: 450px;
   }
@@ -441,7 +473,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .contact__button {
     z-index: 10;
   }
@@ -479,11 +511,11 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 590px) {
   .cardMedia__mediaGalerie {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 0px;
+    margin-top: -50px;
   }
 }
 .cardMedia__filter {
@@ -496,7 +528,7 @@
     width: 40vw;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 590px) {
   .cardMedia__filter {
     width: 90vw;
   }
@@ -711,9 +743,15 @@
   margin-left: 1rem;
   margin-top: 20px;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 490px) {
   .px-dropdown {
     display: none;
+  }
+}
+@media screen and (max-width: 860px) {
+  .px-dropdown {
+    width: 290px;
+    height: 30px;
   }
 }
 
@@ -722,6 +760,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 860px) {
+  .dropdown__title {
+    font-size: medium;
+  }
 }
 
 .px-dropdown-input {

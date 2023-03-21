@@ -1,6 +1,6 @@
     async function getPhotographers() {
         // Penser à remplacer par les données récupérées dans le json
-        const title = document.createElement("article");
+        // const title = document.createElement("article");
         let photographers = "";
 
         //On fait appel à notre JSON qui nous fait une promesse

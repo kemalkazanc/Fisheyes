@@ -17,7 +17,7 @@
     &__logo{
         width: 160px;
         margin-right: 1em;
-        @media screen and (max-width: 390px){
+        @media screen and (max-width: 490px){
             width: 130px;
         }
     }
@@ -26,7 +26,7 @@
         width: 100%;
         display: flex;
         border: 2px solid red;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -40,7 +40,7 @@
         justify-content: space-between;
         //margin: 1rem;
         margin-top: 0;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             display: flex;
             flex-direction: column;
             background-color: none;
@@ -50,8 +50,12 @@
 
     &__info{
         display: flex;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             flex-direction: column;
+        }
+        @media screen and (max-width: 860px){
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -67,17 +71,21 @@
         border-radius: 50%;
         object-fit: cover;
         display: block;
-        @media screen and (max-width: 390px){
+        @media screen and (max-width: 490px){
             display: flex;
             justify-content: center;
             height: 120px;
             width: 120px;
             margin-top: 10px;
         }
+        @media screen and (max-width: 860px){
+            height: 140px;
+            width: 140px;
+        }
     }
     &__infoPerso{
         margin-right: 2em;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -90,7 +98,7 @@
         margin-bottom: 0.1em;
         margin-top: -10px;
         color: $colorCountry;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             font-size: 25px;
             display: flex;
             align-items: center;
@@ -106,15 +114,20 @@
         color: $colorTextGrey;
         margin-top: 0px;
         line-height: 1.2em;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             font-size: 10px;
             display: flex;
             align-items: center;
         }
     }
-    &____divButton{
+    &__divButton{
         display: flex;
         justify-content: center;
+        @media screen and (max-width: 860px){
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
     &__button{
         background-color: $btnColor;
@@ -126,7 +139,7 @@
         color: $colorWhite;
         margin-left: 90px;
         cursor: pointer;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             margin-top: 20px;
             width: 150px;
             height: 30px;
@@ -135,7 +148,11 @@
             position: fixed;
             top: 30rem;
             z-index: 10;
-      }
+        }
+        @media screen and (max-width: 860px){
+            width: 150px;
+            height: 30px;
+        }
     }
     &__likePriceContainer{
         display: flex;
@@ -149,7 +166,7 @@
         height: auto;
         right: 5%;
         margin-left: 5px;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             z-index: 10;
         }
     }
@@ -175,13 +192,13 @@
         font-size: large;
         text-align: center;
         padding: 0.5rem;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             font-size: small;
         }
     }
 
     &____coeurTotal{
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             height: 0px;
         }
     }
@@ -190,7 +207,7 @@
         font-size: large;
         text-align: center;
         padding: 0.5rem;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             font-size: small;
         }
     }

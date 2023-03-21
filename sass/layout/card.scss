@@ -5,12 +5,12 @@
         gap: 70px;
         margin-top: 90px;
         margin-bottom: 50px;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 860px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             flex-wrap: wrap;
         }
-        @media screen and (max-width: 390px){
+        @media screen and (max-width: 490px){
             display: grid;
             grid-template-columns: 1fr;
             gap: 70px;
@@ -40,7 +40,7 @@
         display: block;
         margin-right: auto;
         margin-left: auto;
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 490px) {
             margin-top: 20px;
             height: 150px;
             width: 150px;
@@ -64,7 +64,7 @@
     &__info{
         font-size: 13px;
         margin: 0;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 860px) {
             text-align: center;
         }
     }

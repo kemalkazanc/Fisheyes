@@ -13,10 +13,10 @@
             justify-items: center;
             align-items: center;
         }
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 590px) {
             display: grid;
             grid-template-columns: 1fr;
-            margin-top: 0px;
+            margin-top: -50px;
         }
     }
     &__filter{
@@ -26,7 +26,7 @@
         @media screen and (max-width: 1000px) {
             width: 40vw;
         }
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 590px) {
             width: 90vw;
         }
     }

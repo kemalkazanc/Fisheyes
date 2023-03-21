@@ -153,7 +153,7 @@ function displayMedia(media, index) {
 //----------------------------------------------------------------------
 // TOTAL LIKE
 //----------------------------------------------------------------------
-const totalCoeur = document.getElementsByClassName("cardMedia__compteurLike");
+// const totalCoeur = document.getElementsByClassName("cardMedia__compteurLike");
 function compteurLikeImg(btnLike) {
     //console.log(btnLike);
     const nbLike = btnLike.parentElement.getElementsByClassName("cardMedia__compteurLike")[0].textContent;
@@ -280,7 +280,9 @@ document.addEventListener("keypress", (e) => {
     console.log(e);
 })
 
-document.addEventListener("keydown", function(event) {
+const lightboxCommande = document.getElementsByClassName("lightbox__section")[0];
+//visé la lightbox
+lightboxCommande.addEventListener("keydown", function(event) {
     if (event.key === "Escape") {
         console.log("La touche échap appuyée");
         const lightboxModal = document.querySelector(".lightbox__section");
